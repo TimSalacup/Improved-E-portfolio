@@ -4,32 +4,39 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Timothy Salacup</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" type="image/png" href="./assets/White-logo.png" />
     <script
-      src="https://kit.fontawesome.com/c8e4d183c2.js"
-      crossorigin="a
-    "
+      src="https://kit.fontawesome.com/1a24ceb409.js"
+      crossorigin="anonymous"
     ></script>
     <script src="./index.js"></script>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init("gPhxEhTdxTTyuzYVn");
-   })();
-</script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("gPhxEhTdxTTyuzYVn");
+      })();
+    </script>
   </head>
   <body>
     <section id="landing-page" onmousemove="moveBackground(event)">
       <nav>
         <figure class="personal-logo__wrapper">
-          <img src="./assets/Black-logo.svg" id="personal-logo" class="personal-logo__nav" alt="" />
+          <img
+            src="./assets/Black-logo.svg"
+            id="personal-logo"
+            class="personal-logo__nav"
+            alt=""
+          />
         </figure>
         <ul class="nav__link--list">
           <li class="nav__link">
-            <a onclick="toggleModal()"
+            <a
+              onclick="toggleModal()"
               href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
               >About</a
@@ -63,11 +70,13 @@
           <h1 class="title">Hey</h1>
           <h1 class="title color">I'm Tim</h1>
           <p class="header__para">
-            I'm a <b class="color">Frontend Software engineering enthusiast</b> with a
+            I'm a
+            <b class="color">Frontend Software engineering enthusiast</b> with a
             strong passion for building web applications with great user
             experiences.
             <br />
-            Here's a bit more <b class="color" class="click" onclick="toggleModal()">about me.</b>
+            Here's a bit more
+            <b class="color" class="click" onclick="toggleModal()">about me.</b>
           </p>
           <div class="social__list">
             <a
@@ -77,7 +86,12 @@
             >
               <i class="fab fa-linkedin-in"> </i>
             </a>
-            <a href="https://github.com/TimSalacup" target="__blank" class="social__link click" target="__blank">
+            <a
+              href="https://github.com/TimSalacup"
+              target="__blank"
+              class="social__link click"
+              target="__blank"
+            >
               <i class="fab fa-github"> </i>
             </a>
             <a href="" class="social__link click no-cursor" target="__blank">
@@ -100,96 +114,97 @@
           </h3>
           <h4 class="modal__sub-title">Frontend Software Enthusiast</h4>
           <p class="modal__para">
-            I'm a 20 year-old Filipino <b class="color">frontend software engineering enthusiast</b> with a
-            strong passion for developing websites with <b class="color">great user experiences.</b> 
+            I'm a 20 year-old Filipino
+            <b class="color">frontend software engineering enthusiast</b> with a
+            strong passion for developing websites with
+            <b class="color">great user experiences.</b>
             <br />
-            I currently work in difficult engineering problems. I am <b class="color"> very
-            knowledge hungry</b> and I am ready to absorb information from anyone
-            who I can learn technology from, and <b class="color">apply them in real-world
-            situations.</b> 
+            I currently work in difficult engineering problems. I am
+            <b class="color"> very knowledge hungry</b> and I am ready to absorb
+            information from anyone who I can learn technology from, and
+            <b class="color">apply them in real-world situations.</b>
           </p>
           <div class="modal__languages">
             <figure class="modal__language">
-              <img class="modal__language--img"
+              <img
+                class="modal__language--img"
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
                 alt=""
               />
-            <span class="language__name">HTML</span>
+              <span class="language__name">HTML</span>
             </figure>
             <figure class="modal__language">
-              <img class="modal__language--img"
+              <img
+                class="modal__language--img"
                 src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
                 alt=""
               />
-            <span class="language__name">CSS</span>
+              <span class="language__name">CSS</span>
             </figure>
             <figure class="modal__language">
-              <img class="modal__language--img"
+              <img
+                class="modal__language--img"
                 src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
                 alt=""
               />
-            <span class="language__name">JavaScript</span>
+              <span class="language__name">JavaScript</span>
             </figure>
             <figure class="modal__language">
-              <img class="modal__language--img"
+              <img
+                class="modal__language--img"
                 src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png"
                 alt=""
               />
-            <span class="language__name">React</span>
+              <span class="language__name">React</span>
             </figure>
           </div>
         </div>
         <div class="modal__half modal__contact">
           <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
-          <h3 class="modal__title modal__title--contact">
-              Let's have a chat!
-          </h3>
+          <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
           <h4 class="modal__sub-title modal__fub-title--contact">
             I'm currently open to new opportunities.
           </h4>
           <form onsubmit="contact(event)" id="contact__form">
             <div class="form__item">
-              <label class="form__item--label">
-                Name
-              </label>
-              <input type="text" class="input" name="user_name"></input>
+              <label class="form__item--label"> Name </label>
+              <input type="text" class="input" name="user_name" />
             </div>
             <div class="form__item">
-              <label class= "form__item--label">
-                Email
-              </label>
-              <input type="email" class="input" name="user_email"></input>
+              <label class="form__item--label"> Email </label>
+              <input type="email" class="input" name="user_email" />
             </div>
             <div class="form__item">
-              <label class="form__item--label">
-                Message
-              </label>
-              <textarea type="text" class="input" name="user_message"></textarea>
+              <label class="form__item--label"> Message </label>
+              <textarea
+                type="text"
+                class="input"
+                name="user_message"
+              ></textarea>
             </div>
             <button id="contact__submit" class="form__submit">
               Send it my way
             </button>
           </form>
           <div class="modal__overlay modal__overlay--loading">
-            <i class="fas fa-spinner">
-            </i>
+            <i class="fas fa-spinner"> </i>
           </div>
           <div class="modal__overlay modal__overlay--success">
             Thanks for the message! Looking forward to speaking to you soon.
           </div>
         </div>
       </div>
-      <img src="./assets/semi circle.svg" alt="" class="shape shape--0">
-      <img src="./assets/circle.svg" alt="" class="shape shape--1">
-      <img src="./assets/squiggly.svg" alt="" class="shape shape--2">
-      <img src="./assets/circle.svg" alt="" class="shape shape--3">
-      <img src="./assets/triangle.svg" alt="" class="shape shape--4">
-      <img src="./assets/circle.svg" alt="" class="shape shape--5">
-      <img src="./assets/squiggly.svg" alt="" class="shape shape--6">
-      <img src="./assets/circle.svg" alt="" class="shape shape--7">
-      <img src="./assets/semi circle.svg" alt="" class="shape shape--8">
+      <img src="./assets/semi circle.svg" alt="" class="shape shape--0" />
+      <img src="./assets/circle.svg" alt="" class="shape shape--1" />
+      <img src="./assets/squiggly.svg" alt="" class="shape shape--2" />
+      <img src="./assets/circle.svg" alt="" class="shape shape--3" />
+      <img src="./assets/triangle.svg" alt="" class="shape shape--4" />
+      <img src="./assets/circle.svg" alt="" class="shape shape--5" />
+      <img src="./assets/squiggly.svg" alt="" class="shape shape--6" />
+      <img src="./assets/circle.svg" alt="" class="shape shape--7" />
+      <img src="./assets/semi circle.svg" alt="" class="shape shape--8" />
     </section>
-    <section id="projects"> 
+    <section id="projects">
       <div class="container">
         <div class="row">
           <h1 class="section__title">
@@ -199,28 +214,66 @@
             <li class="project">
               <div class="project__wrapper">
                 <img
-                  src="./assets/blinker mockup.png"
-                  class="project__img"
+                  src="./assets/Library.jpg"
+                  class="project__img library"
                   alt=""
                 />
                 <div class="project__wrapper--bg"></div>
                 <div class="project__description">
                   <h3 class="project__description--title">
-                    Car Sales Projects
+                    Library E-commerce Project
                   </h3>
                   <h4 class="project__description--sub-title">
-                    Html, CSS, JavaScript, Vue, Vuex
+                    Html, CSS, React
                   </h4>
                   <p class="project__description--para">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Laboriosam temporibus iste tempora cum quam vero neque
-                    repellendus velit minus odit?
+                    This project is an online library prototype where users can
+                    browse books, add them to a cart, adjust quantities, and see
+                    the total price update automatically.
                   </p>
                   <div class="project__description--links">
-                    <a href="https://github.com/TimSalacup" target="__blank" class="project__description--link">
+                    <a
+                      href="https://github.com/TimSalacup"
+                      target="__blank"
+                      class="project__description--link"
+                    >
                       <i class="fab fa-github"></i>
                     </a>
-                    <a href="#" class="project__description--link">
+                    <a
+                      href="https://library-react-retake-d6a623f667fa.herokuapp.com/"
+                      target="__blank"
+                      class="project__description--link"
+                    >
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project__wrapper">
+                <img src="./assets/cvs.jpg" class="project__img" alt="" />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    Dialysis Center Landing Page
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    Html, CSS, React
+                  </h4>
+                  <p class="project__description--para">
+                    This project is a landing page for a dialysis center. It
+                    features information about the center's services,
+                    facilities, and contact details, all presented in a clean
+                    and user-friendly design.
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://github.com/TimSalacup"
+                      target="__blank"
+                      class="project__description--link"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://react-freelance-project-attempt.vercel.app/" target="_blank" class="project__description--link">
                       <i class="fas fa-link"></i>
                     </a>
                   </div>
@@ -246,36 +299,11 @@
                     repellendus velit minus odit?
                   </p>
                   <div class="project__description--links">
-                    <a href="https://github.com/TimSalacup" target="__blank" class="project__description--link">
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a href="#" class="project__description--link">
-                      <i class="fas fa-link"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="project__wrapper">
-                <img
-                  src="./assets/blinker mockup.png"
-                  class="project__img"
-                  alt=""
-                />
-                <div class="project__wrapper--bg"></div>
-                <div class="project__description">
-                  <h3 class="project__description--title">
-                    Car Sales Projects
-                  </h3>
-                  <h4 class="project__description--sub-title">
-                    Html, CSS, JavaScript, Vue, Vuex
-                  </h4>
-                  <p class="project__description--para">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Laboriosam temporibus iste tempora cum quam vero neque
-                    repellendus velit minus odit?
-                  </p>
-                  <div class="project__description--links">
-                    <a href="https://github.com/TimSalacup" target="__blank" class="project__description--link">
+                    <a
+                      href="https://github.com/TimSalacup"
+                      target="__blank"
+                      class="project__description--link"
+                    >
                       <i class="fab fa-github"></i>
                     </a>
                     <a href="#" class="project__description--link">
@@ -286,6 +314,39 @@
               </div>
             </li>
           </ul>
+        </div>
+        <div class="container">
+          <div class="row">
+            <h1 class="section__title">Other <span class="color">Projects</span> and <span class="color">Milestones</span> </h1>
+            <div class="selection">
+              <ul>
+                <li>
+                <button class="selection__item">Youth Group Game</button>
+                </li>
+                <li>
+                <button class="selection__item">Java Certification</button>
+                </li>
+                <li>
+                <button class="selection__item">HTML & CSS Certification</button>
+                </li>
+              </ul>
+            </div>
+            <div class="selection__display">
+              <img src="./assets/HTML-certificate.jpg" class="selection__display--img" alt="">
+              <div class="selection__display--description">
+                <div class="selection__display--description-skeleton-container">
+                  <h2 class="selection__display--description-title">Lorem ipsum dolor sit.</h3>
+                  <p class="selection__display--description-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum vero adipisci perferendis officia beatae? Neque possimus dolor blanditiis accusantium maiores.</p>
+                  <div class="selection__display--description-skeleton skeleton1"></div>
+                  <div class="selection__display--description-skeleton skeleton2"></div>
+                  <div class="selection__display--description-skeleton skeleton3"></div>
+                  <div class="selection__display--description-skeleton skeleton2"></div>
+                  <div class="selection__display--description-skeleton skeleton1"></div>
+                  <div class="selection__display--description-skeleton skeleton3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -301,19 +362,22 @@
           </figure>
           <div class="footer__social--list">
             <a
-              href="https://github.com/TimSalacup" target="__blank"
+              href="https://github.com/TimSalacup"
+              target="__blank"
               class="footer__social--link link__hover-effect link__hover-effect--white"
               >GitHub</a
             >
             <a
-              href="https://www.linkedin.com/in/teemo-salacup-931484154/" target="__blank"
+              href="https://www.linkedin.com/in/teemo-salacup-931484154/"
+              target="__blank"
               class="footer__social--link link__hover-effect link__hover-effect--white"
               >LinkedIn</a
             >
             <a
               href="#landing-page"
               class="footer__social--link link__hover-effect link__hover-effect--white"
-              onclick="toggleModal()">Contact</a
+              onclick="toggleModal()"
+              >Contact</a
             >
             <a
               href="#"
