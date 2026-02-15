@@ -159,7 +159,7 @@ textarea:focus {
   background-color: white;
 }
 
-.dark-theme .mail__btn {
+.dark-theme .mail__btn, .dark-theme .selection__item {
   background-color: white;
   color: #242424;
 }
@@ -656,6 +656,7 @@ OTHER PROJECTS & MILESTONES
   height: 100%;
   width: 40%;
   border-radius: 20px 0 0 20px;
+  border: none;
   display: flex;
   align-items: center;
   background: linear-gradient(
@@ -690,14 +691,14 @@ OTHER PROJECTS & MILESTONES
   height: 32px;
   background-color: #dcdfe6;
   margin-bottom: 32px;
-  display: none;
+  /* display: none; */
 }
 
 .selection__display--description-skeleton {
   height: 12px;
   background-color: #dcdfe6;
   margin-bottom: 16px;
-  display: none;
+  /* display: none; */
 }
 
 .skeleton1 {

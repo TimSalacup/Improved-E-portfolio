@@ -11,7 +11,7 @@
       src="https://kit.fontawesome.com/1a24ceb409.js"
       crossorigin="anonymous"
     ></script>
-    <script src="./index.js"></script>
+    <script src="./index.js" defer></script>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
@@ -321,22 +321,23 @@
             <div class="selection">
               <ul>
                 <li>
-                <button class="selection__item">Youth Group Game</button>
+                <button class="selection__item" onclick="changeOthers(event)">Youth Group Game</button>
                 </li>
                 <li>
-                <button class="selection__item">Java Certification</button>
+                <button class="selection__item" onclick="changeOthers(event)">Java Certification</button>
                 </li>
                 <li>
-                <button class="selection__item">HTML & CSS Certification</button>
+                <button class="selection__item" onclick="changeOthers(event)">HTML & CSS Certification</button>
                 </li>
               </ul>
             </div>
             <div class="selection__display">
-              <img src="./assets/HTML-certificate.jpg" class="selection__display--img" alt="">
+              <img src="" class="selection__display--img" alt="display photo">
               <div class="selection__display--description">
                 <div class="selection__display--description-skeleton-container">
-                  <h2 class="selection__display--description-title">Lorem ipsum dolor sit.</h3>
-                  <p class="selection__display--description-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum vero adipisci perferendis officia beatae? Neque possimus dolor blanditiis accusantium maiores.</p>
+                  <h2 class="selection__display--description-title"></h3>
+                  <p class="selection__display--description-para"></p>
+                  <div class="selection__display--description-skeleton-title"></div>
                   <div class="selection__display--description-skeleton skeleton1"></div>
                   <div class="selection__display--description-skeleton skeleton2"></div>
                   <div class="selection__display--description-skeleton skeleton3"></div>
